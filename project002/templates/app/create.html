@@ -1,0 +1,8 @@
+<form action="/app/data/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    name        : <input type="text" name="name"><br>
+    ingredients : <input type="text" name="ingredients"><br>
+    process     : <input type="text" name="process"><br>
+    image       : <input type="file" name="image"><br>
+    <input type="submit" value="Submit">
+</form>
